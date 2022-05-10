@@ -11,7 +11,9 @@ background: linear-gradient(209.92deg, #19BBEE -129.73%, #8C35D6 119.12%);
     border: none;
 cursor: pointer
 }
-
+.p-d-h{
+  font-size: 22px !important;
+}
 
 .page_wrapper.home h2,
 .page_wrapper.home h3 {
@@ -92,11 +94,6 @@ cursor: pointer
 .fab{
   color: #3257A8;
 }
-@media (min-width: 1600px) {
-  .respons-pad{
-    padding-top: 120px !important;
-  }
-}
 @media (max-width: 992px) { 
   .res-img{
     width: 18%;
@@ -134,16 +131,9 @@ cursor: pointer
     width: 60% !important;
   }
 }
-.page_wrapper.home .CrousalWrapper .crousalText {
-  /* position: absolute; */
-  color: #39393C;
-  /* max-width: 500px; */
-  /* top: 240px; */
-  /* bottom: 0; */
-  /* margin: auto; */
-  font-size: 2.5rem;
-  /* left: 8rem; */
-  /* right: 0; */
+.page_wrapper.home .CrousalWrapper .crousalText { 
+  color: #39393C; 
+  font-size: 2.5rem; 
 }
 .page_wrapper.home .CrousalWrapper .crousalText span {
   font-weight: 600;
@@ -155,6 +145,15 @@ cursor: pointer
 .page_wrapper.home .CrousalWrapper .carousel-indicators li.active {
   background-color: #2EB12A;
   width: 25px;
+}
+@media (min-width: 1600px) {
+  .respons-pad{
+    padding-top: 120px !important;
+  }
+  .page_wrapper.home .CrousalWrapper .crousalText { 
+    color: #39393C; 
+    font-size: 2rem !important 
+  }
 }
 .page_wrapper.home .SubQuto {
   justify-content: center;
@@ -226,7 +225,7 @@ cursor: pointer
 .nav-element{ 
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 150%;
     cursor: pointer;
     /* margin: 0 30px; */
@@ -239,13 +238,13 @@ cursor: pointer
     content:'';
     height: 5px;
     width: 50px; 
-    top: 30px;
+    top: 20px;
     position: absolute;
     background: #37A794; 
 }
 .nav-brandimg{
-    padding: 0px 0 0px 140px !important;  
-    position: absolute;
+    padding: 0px 0 0px 0px !important;  
+    /* position: absolute; */
     left: 0; 
 } 
 @media (max-width: 525px) {
@@ -273,7 +272,7 @@ cursor: pointer
     }
 }
 .nav-brandimg img{
-    width:80px;
+    width:100px;
     height: 60px;
 }
 .blue-text{
@@ -290,15 +289,15 @@ cursor: pointer
   background-position: center;
 }
 .page_wrapper.home .part4 .CircleWrapper h3.circle_header {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .page_wrapper.home .part4 .CircleWrapper .solveText {
   position: absolute;
   max-width: 300px;
 }
 .page_wrapper.home .part4 .CircleWrapper .solveText.solveText1 {
-  right: 35px;
-  top: 71px;
+  right: 63px;
+  top: 50px;
 }
 .page_wrapper.home .part4 .CircleWrapper .solveText.solveText1.LeftPoint:before {
   left: -27px;
@@ -313,8 +312,8 @@ cursor: pointer
   top: 7px;
 }
 .page_wrapper.home .part4 .CircleWrapper .solveText.solveText3 {
-  right: 68px;
-  top: 574px;
+  right: 8px;
+  top: 521px;
 }
 .page_wrapper.home .part4 .CircleWrapper .solveText.solveText3.LeftPoint:before {
   left: -23px;
@@ -383,7 +382,7 @@ cursor: pointer
 .page_wrapper.home .part4 .CircleWrapper p.circle_Subheader {
   color: #000000;
   font-weight: normal;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .page_wrapper.home .part5 {
   background: url(../images/ProcessBg.png);

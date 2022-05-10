@@ -82,7 +82,7 @@ background: url("https://ik.imagekit.io/hbj42mvqwv/sec-3-bg_YeBrPgy-u.png?ik-sdk
 }
 .section-4 p{
     font-style: normal;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.015em;
     color: #3257A8;
 }
@@ -90,7 +90,7 @@ background: url("https://ik.imagekit.io/hbj42mvqwv/sec-3-bg_YeBrPgy-u.png?ik-sdk
     background: #F0F3F9; 
 }
 .section-5 .head{  
-        padding-left:20px;
+        /* padding-left:20px; */
     } 
 .section-5 ul{
     list-style: none;
@@ -100,7 +100,7 @@ background: url("https://ik.imagekit.io/hbj42mvqwv/sec-3-bg_YeBrPgy-u.png?ik-sdk
 }
 .section-5 ul li{
     padding: 15px 0;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 150%;
     color: #3257A8; 
@@ -137,7 +137,45 @@ background: url("https://ik.imagekit.io/hbj42mvqwv/sec-3-bg_YeBrPgy-u.png?ik-sdk
     border-radius: 0px 3px 3px 0px !important;
     color: white
 }
+.call-action-button{
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+    background-color: #3257A8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.pink{
+    color: #5F3E65;
+}
+.orange{
+    color: #5F4448;
+}
+.yellow{
+    color: #635E4A;
+}
+.blue{
+    color: #375063;
+}
+.green{
+    color: #2F4B2F;
+}
+@media (max-width : 768px){
+    .carousel{
+        height: 95vh;
+    }
+    .m-hide{
+        display: none;
+    }
+    .mp-zero{
+        padding-top: 0 !important;
+    }
+}
 </style>
+<script src="https://smtpjs.com/v3/smtp.js"></script>  
 </head>
 
 
@@ -160,7 +198,7 @@ background: url("https://ik.imagekit.io/hbj42mvqwv/sec-3-bg_YeBrPgy-u.png?ik-sdk
     <div class="container">
            <div class="row">
                <div class="col-12 col-md-12 pr-md-0 pl-md-0" style="padding: 0 !important;">
-                   <nav class="navbar navbar-expand-md pt-3 pb-2">
+                   <nav class="navbar navbar-expand-md ">
 <!------
 <ul>
 
@@ -172,7 +210,7 @@ background: url("https://ik.imagekit.io/hbj42mvqwv/sec-3-bg_YeBrPgy-u.png?ik-sdk
 --->
 
 
-<ul style="position: relative !important; width: 100%;" class="d-flex  justify-content-center align-items-center">
+<ul style="position: relative !important; width: 100%;" class="d-flex   align-items-center">
     <li class="nav-brandimg"><a href="index.html">
         <img src="./assets/logo/logo.svg" alt="logo" class='' />
     </a></li>
@@ -181,7 +219,7 @@ background: url("https://ik.imagekit.io/hbj42mvqwv/sec-3-bg_YeBrPgy-u.png?ik-sdk
 
 <li class="nav-element"><a href="about.html">About Us</a></li>
 
-<li class="nav-element"><a href="#contact">Contact Us</a></li>
+<li class="nav-element"><a href="contact.html">Contact Us</a></li>
 
 </ul>
 
@@ -300,46 +338,57 @@ $(this).addClass('active')
                       <div class="carousel-item active">
                         <blockquote class="blockquote flex-md-row flex-column-reverse d-flex align-items-center pl-3  justify-content-between  ">
                             <!-- <div></div> -->
-                            <p class="col-md-6 col-sm-12 mb-0 crousalText blue-text"> 
+                          <div class="col-md-6 col-sm-12 mb-0" style="position: relative;">  <p class=" crousalText blue-text"> 
                                 <span>Manage entire hospital data on CERT-IN secured environment </span>( as per Health Ministry Guidelines )</span>
                             </p>
+                            
+                        </div>
                             <img class=' img-fluid' src='./assets/images/hero-1.png'></img>
                           </blockquote>
                       </div>
                       <div class="carousel-item">
-                        <blockquote class="blockquote flex-md-row-reverse flex-column-reverse d-flex justify-content-between  align-items-center">
+                        <blockquote class="blockquote flex-md-row flex-column-reverse d-flex justify-content-between  align-items-center">
                             <!-- <div></div> -->
-                            <p class="col-md-6 col-sm-12 mb-0 crousalText blue-text" >
+                          <div class="col-md-6 col-sm-12 mb-0" style="position: relative;">  <p class=" crousalText blue-text" >
                                 <span>Unified Hospital Departments, Customizable revenue reports<br/><br/></span>
                             </p>
-                            <img class=' img-fluid  pr-3' src='./assets/images/hero-2.png'></img>
+                            
+                        </div>
+                            <img class=' img-fluid ' src='./assets/images/hero-3.png'></img>
                           </blockquote>
                       </div>
                       <div class="carousel-item">
                         <blockquote class="blockquote flex-md-row flex-column-reverse d-flex justify-content-between  align-items-center pl-3">
                             <!-- <div></div> -->
-                            <p class="col-md-6 col-sm-12 mb-0 crousalText blue-text"><span>Faster Service Delivery </span>at Labs and Pharmacies<br/><br/>
+                          <div class="col-md-6 col-sm-12 mb-0" style="position: relative;">  <p class=" crousalText blue-text"><span>Faster Service Delivery </span>at Labs and Pharmacies<br/><br/>
                             </p>
-                            <img class=' img-fluid' src='./assets/images/hero-3.png'></img>
-                          </blockquote>
-                      </div>
-                      <div class="carousel-item">
-                        <blockquote class="blockquote flex-md-row flex-column-reverse d-flex justify-content-between  align-items-center pl-3">
-                            <!-- <div></div> -->
-                            <p class="col-md-6 col-sm-12 mb-0 crousalText blue-text"><span>No revenue leakage </span>related to pharmacy storage and non-tracking
-                            </p>
+                            
+                        </div>
                             <img class=' img-fluid' src='./assets/images/hero-4.png'></img>
                           </blockquote>
                       </div>
                       <div class="carousel-item">
                         <blockquote class="blockquote flex-md-row flex-column-reverse d-flex justify-content-between  align-items-center pl-3">
                             <!-- <div></div> -->
-                            <p class="col-md-6 col-sm-12 mb-0 crousalText blue-text"><span>Enhance Patient Engagement </span>through Whatsapp Integration<br/><br/>
+                          <div class="col-md-6 col-sm-12 mb-0" style="position: relative;">  <p class=" crousalText blue-text"><span>No revenue leakage </span>related to pharmacy storage and non-tracking
                             </p>
+                            
+                        </div>
                             <img class=' img-fluid' src='./assets/images/hero-5.png'></img>
                           </blockquote>
                       </div>
+                      <div class="carousel-item">
+                        <blockquote class="blockquote flex-md-row flex-column-reverse d-flex justify-content-between  align-items-center pl-3">
+                            <!-- <div></div> -->
+                          <div class="col-md-6 col-sm-12 mb-0" style="position: relative;">  <p class=" crousalText blue-text"><span>Enhance Patient Engagement </span>through Whatsapp Integration<br/><br/>
+                            </p>
+                            
+                        </div>
+                            <img class=' img-fluid' src='./assets/images/hero-6.png'></img>
+                          </blockquote>
+                      </div>
                     </div>
+                    <button class="call-action-button">CONTACT US</button>
 
                   </div>
 
@@ -387,34 +436,36 @@ $(this).addClass('active')
             <h2 class="header_color font-35 font-weight-bold text-center mb-4 mb-md-5  position-relative z-index">The power of Docmigo</h2>
        <div class="container position-relative z-index bg-white">
 
-             <div class="row py-4 py-md-5 overflow-hidden HealthData">
-                  <div class=" text-center  wow fadeInDown" data-wow-delay=".4s" data-wow-duration="1.5s">
-                      <img  src="./assets/logo/id.svg" alt="" class="fables-iconbussiness fables-second-text-color fa-3x"></img>
+             <div class="row py-4 py-md-5 overflow-hidden d-flex justify-content-evenly HealthData" style="justify-content: space-evenly;">
+                  <div class=" text-center d-flex align-items-center jcsb col-md-4 col-sm-6 wow fadeInDown" data-wow-delay=".4s" data-wow-duration="1.5s">
+                      <img  src="./assets/logo/id.svg" alt="" class="fables-iconbussiness px-1 fables-second-text-color fa-3x"></img>
 
-                      <h2 class="fables-main-text-color font-18 my-2">Integrated Departments</h2>
-
-                  </div>
-                  <div class=" text-center wow fadeInDown" data-wow-delay=".8s" data-wow-duration="1.5s">
-                        <img src="./assets/logo/ipf.svg" alt="" class="fables-iconbussiness fables-second-text-color fa-3x"></img>
-                      <h2 class="fables-main-text-color font-18 my-2">Increased Patient Footfall</h2>
+                      <h2 class="fables-main-text-color p-d-h pink font-18 my-2">Integrated <br class="m-hide"/>Departments</h2>
 
                   </div>
-                  <div class=" text-center wow fadeInDown" data-wow-delay="1.2s" data-wow-duration="1.5s">
-                        <img src="./assets/logo/ipc.svg" alt="" class="fables-iconbussiness fables-second-text-color fa-3x"></img>
-                      <h2 class="fables-main-text-color font-18 my-2">Improved Patient Care</h2>
+                  <div class=" text-center d-flex align-items-center jcsb  col-md-4 col-sm-6 wow fadeInDown" data-wow-delay=".8s" data-wow-duration="1.5s">
+                        <img src="./assets/logo/ipf.svg" alt="" class="fables-iconbussiness px-1 fables-second-text-color fa-3x"></img>
+                      <h2 class="fables-main-text-color orange p-d-h font-18 my-2">Increased <br class="m-hide"/>Patient Footfall</h2>
 
                   </div>
-                  <div class="text-center wow fadeInDown" data-wow-delay="1.6s" data-wow-duration="1.5s">
-                        <img src="./assets/logo/re.svg" alt="" class="fables-iconbussiness fables-second-text-color fa-3x"></img>
-                      <h2 class="fables-main-text-color font-18 my-2">Reduced expenses</h2>
+                  <div class=" text-center d-flex align-items-center jcsb  col-md-4 col-sm-6 wow fadeInDown" data-wow-delay="1.2s" data-wow-duration="1.5s">
+                        <img src="./assets/logo/ipc.svg" alt="" class="fables-iconbussiness px-1 fables-second-text-color fa-3x"></img>
+                      <h2 class="fables-main-text-color yellow p-d-h font-18 my-2">Improved <br class="m-hide"/>Patient Care</h2>
 
                   </div>
-                  <div class="text-center wow fadeInDown" data-wow-delay="2s" data-wow-duration="1.5s">
-                    <img src="./assets/logo/tm.svg" alt="" class="fables-iconbussiness fables-second-text-color fa-3x"></img>
-                  <h2 class="fables-main-text-color font-18 my-2">Task Management</h2>
+                <!-- </div> -->
+                  <!-- <div class="row  overflow-hidden d-flex HealthData" style="justify-content: space-evenly;"> -->
+                    <div class="text-center d-flex align-items-center jcsb mp-zero col-md-4 pt-5 col-sm-6 wow fadeInDown" data-wow-delay="1.6s" data-wow-duration="1.5s">
+                            <img src="./assets/logo/re.svg" alt="" class="fables-iconbussiness px-1 fables-second-text-color fa-3x"></img>
+                        <h2 class="fables-main-text-color blue p-d-h font-18 my-2">Reduced <br class="m-hide"/>expenses</h2>
 
-              </div>
-            </div>
+                    </div>
+                    <div class="text-center d-flex align-items-center jcsb mp-zero col-md-4 pt-5 col-sm-6 wow fadeInDown" data-wow-delay="2s" data-wow-duration="1.5s">
+                        <img src="./assets/logo/tm.svg" alt="" class="fables-iconbussiness px-1 fables-second-text-color fa-3x"></img>
+                    <h2 class="fables-main-text-color green p-d-h font-18 my-2">Task <br class="m-hide"/>Management</h2>
+
+                </div>
+                </div>
 
 
        </div>
@@ -427,7 +478,7 @@ $(this).addClass('active')
                     <div class="mb-4 mb-md-5 col-12 d-flex position-relative align-items-center justify-content-center text-center">
                       <img style="position: absolute; top: -30; left: 0" src='./assets/images/arrows.png' class="res-img d-none d-sm-block"  alt="arrows" />
                        <h2 class="header_color head font-weight-bold  position-relative z-index"><strong>Docmigo’s key features</strong></h2>
-                       <img style="position: absolute; top: -30; right: 0" class="res-img d-none d-sm-block" src="./assets/images/setting.png" alt="settings" />
+                       <!-- <img style="position: absolute; top: -30; right: 0" class="res-img d-none d-sm-block" src="./assets/images/setting.png" alt="settings" /> -->
                     </div>
                     <!-- <div class="mb-4 mb-md-5 col-12  text-center">
                         <h2 class="header_color  font-weight-bold  position-relative z-index">Docmigo’s key features</h2>
@@ -599,8 +650,8 @@ $(this).addClass('active')
           </div>
     </div> -->
     <div class="section-4 mb-6">
-        <div class="mb-4 padd-zero py-5 mb-md-5 col-12 d-flex position-relative align-items-center justify-content-center text-center">
-            <img class="d-none d-md-block" style="position:absolute; top: 0; left: 0" src="./assets/logo/hand-pointing.svg" alt="hand" />
+        <div class="mb-4 padd-zero pb-5 mb-md-5 col-12 d-flex position-relative align-items-center justify-content-center text-center">
+            <!-- <img class="d-none d-md-block" style="position:absolute; top: 0; left: 0" src="./assets/logo/hand-pointing.svg" alt="hand" /> -->
              <h2 class="header_color head font-weight-bold  position-relative z-index"><strong>Why Docmigo ?</strong></h2>
              <img class="d-none d-md-block" style="position:absolute; top: 30px; right: 60px" src="./assets/images/arrows-pink.png" alt="arrows" />
           </div>
@@ -628,31 +679,31 @@ $(this).addClass('active')
             <div class="col-md-7 col-lg-5 p-5">
                 <h2 class="head"><strong>Docmigo HMS</strong></h2>
                 <ul>
-                    <li key={index}>
+                    <li>
                         Real time vitals information
                     </li>
-                    <li key={index}>
+                    <li>
                         90% Reduced manual errors
                     </li>
-                    <li key={index}>
+                    <li>
                         Clear Communication
                     </li>
-                    <li key={index}>
+                    <li>
                         Connected departments
                     </li>
-                    <li key={index}>
+                    <li>
                         Shareable electronic record maintenance
                     </li>
-                    <li key={index}>
+                    <li>
                         Assistance in Diagnosis
                     </li>
-                    <li key={index}>
+                    <li>
                         Streamlined inventory management
                     </li>
-                    <li key={index}>
+                    <li>
                         Hospital guidelines available on the portal
                     </li>
-                    <li key={index}>
+                    <li>
                         Save time and efforts
                     </li>
                 </ul>
@@ -758,7 +809,7 @@ document.getElementById("demo").innerHTML = "\n Error: Your email address is inv
                <div class="my-3">
                 <h2 class="font-18 semi-font   " style="color: #3257A8">Address:</h2>
                     <!-- <p class="font-14  ">HealthDataNext,202,Khalifan Building, Al Raffa2,Ai Mankhool,Near Gold Souk, Dubai.</p> -->
-                    <p class="font-14  " style="color: #3257A8">Avyaan Technologies Pvt. Ltd, <br />
+                    <p class="font-16  " style="color: #3257A8">Avyaan Technologies Pvt. Ltd, <br />
                     CIBA, 6th Floor, Agnel Technical Complex, 
                     <br />
                     Sector 9A, Vashi, 
@@ -789,30 +840,30 @@ document.getElementById("demo").innerHTML = "\n Error: Your email address is inv
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
 
-function sendEmail() {
+// function sendEmail() {
 
-var inputVal = document.getElementById("myInput").value;
-var inputTest = "tried to contact. Please get back."
+// var inputVal = document.getElementById("myInput").value;
+// var inputTest = "tried to contact. Please get back."
 
-if(inputVal){
-        Email.send({
-    SecureToken : "2a321f3d-70fc-4bb2-a6e4-88f75bed1c59",
-    To : 'info@healthdataanalytics.cloud',
-    From : "Intern2.grail@gmail.com",
-    Subject : "Prospective Customer",
-    Body : inputVal+" "+inputTest
-    }).then(
-       message => console.log("message",message)
+// if(inputVal){
+//         Email.send({
+//     SecureToken : "2a321f3d-70fc-4bb2-a6e4-88f75bed1c59",
+//     To : 'info@healthdataanalytics.cloud',
+//     From : "Intern2.grail@gmail.com",
+//     Subject : "Prospective Customer",
+//     Body : inputVal+" "+inputTest
+//     }).then(
+//        message => console.log("message",message)
 
-    );
+//     );
 
-document.getElementById("demo").innerHTML = "\n We have received your email details, one of our representatives will get in touch with you";
-document.getElementById("myInput").value = " ";
-}
-else {
-document.getElementById("demo").innerHTML = "\n Error: Your email address is invalid or your email address could not be captured, please try again with a valid email address";
-}
-}
+// document.getElementById("demo").innerHTML = "\n We have received your email details, one of our representatives will get in touch with you";
+// document.getElementById("myInput").value = " ";
+// }
+// else {
+// document.getElementById("demo").innerHTML = "\n Error: Your email address is invalid or your email address could not be captured, please try again with a valid email address";
+// }
+// }
 </script>     
 
  </form>
@@ -867,6 +918,7 @@ document.getElementById("demo").innerHTML = "\n Error: Your email address is inv
 <script src="assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.js"></script>
 <script src="assets/vendor/fancybox-master/jquery.fancybox.min.js"></script>
 <script src="assets/custom/js/custom.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>  
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -883,7 +935,22 @@ document.getElementById("demo").innerHTML = "\n Error: Your email address is inv
 
 
 </script>
-
+<script>
+     
+function sendEmail() {
+	Email.send({
+	Host: "smtp.gmail.com",
+	Username : "kamalnanda20@gmail.com",
+	Password : "14may2000",
+	To : 'kamalnanda45@gmail.com',
+	From : "kamalnanda20@gmai.com",
+	Subject : "TEST",
+	Body : "TESTINGGG",
+	}).then(
+		message => alert("mail sent successfully")
+	);
+}
+</script>
 </body>
 </html>
 
